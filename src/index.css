@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 98%;
+    --foreground: 220 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 3.9%;
+    --primary: 220 90% 56%;
+    --primary-foreground: 220 10% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220 9% 46.1%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 3.8% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220 9% 46.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 90% 56%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 10% 3.9%;
+    --foreground: 220 10% 98%;
+    --card: 220 10% 3.9%;
+    --card-foreground: 220 10% 98%;
+    --popover: 220 10% 3.9%;
+    --popover-foreground: 220 10% 98%;
+    --primary: 220 90% 56%;
+    --primary-foreground: 220 10% 98%;
+    --secondary: 220 10% 14.9%;
+    --secondary-foreground: 220 10% 98%;
+    --muted: 220 10% 14.9%;
+    --muted-foreground: 220 10% 63.9%;
+    --accent: 220 10% 14.9%;
+    --accent-foreground: 220 10% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 10% 14.9%;
+    --input: 220 10% 14.9%;
+    --ring: 220 90% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Vegas-themed animations */
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 5px #fde047, 0 0 10px #fde047, 0 0 15px #fde047;
+  }
+  50% {
+    box-shadow: 0 0 10px #fde047, 0 0 20px #fde047, 0 0 30px #fde047;
+  }
+  100% {
+    box-shadow: 0 0 5px #fde047, 0 0 10px #fde047, 0 0 15px #fde047;
+  }
+}
+
+@keyframes waddle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.neon-glow {
+  animation: neon-glow 2s ease-in-out infinite;
+}
+
+.waddle {
+  animation: waddle 2s ease-in-out infinite;
+}
+
+/* Gradient backgrounds */
+.vegas-gradient {
+  background: linear-gradient(135deg, #fde047 0%, #f97316 50%, #dc2626 100%);
+}
+
+.desert-gradient {
+  background: linear-gradient(135deg, #fed7aa 0%, #fdba74 50%, #fb923c 100%);
+}
+
+.penguin-gradient {
+  background: linear-gradient(135deg, #bae6fd 0%, #7dd3fc 50%, #38bdf8 100%);
+}
