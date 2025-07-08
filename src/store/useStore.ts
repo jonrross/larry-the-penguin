@@ -41,6 +41,36 @@ const mockEvents: PenguinEvent[] = [
     image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop',
     category: 'special',
     price: 30
+  },
+  {
+    id: '4',
+    title: "Larry's Comedy Roast Night",
+    description: "Larry faces the heat as Vegas comedians and his penguin pals roast him with icy jokes!",
+    date: new Date('2024-03-03T19:00:00'),
+    location: 'Comedy Cellar, Rio Hotel',
+    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?w=800&h=600&fit=crop',
+    category: 'special',
+    price: 20
+  },
+  {
+    id: '5',
+    title: 'Ice Skating Under the Stars',
+    description: 'Skate with Larry on a rooftop rink, complete with disco lights and music!',
+    date: new Date('2024-03-10T18:00:00'),
+    location: 'The Cosmopolitan Rooftop',
+    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=800&h=600&fit=crop',
+    category: 'special',
+    price: 28
+  },
+  {
+    id: '6',
+    title: "Larry's Parade on the Strip",
+    description: "Don't miss the annual Penguin Parade with Larry and friends in costumes, music, and floats!",
+    date: new Date('2024-03-17T17:00:00'),
+    location: 'Las Vegas Strip',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop',
+    category: 'special',
+    price: 0
   }
 ];
 
